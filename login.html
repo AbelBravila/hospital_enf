@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in Hospital</title>
+    <link rel="stylesheet" href= "style.css">
 </head>
 
 <body>
-    <div class="contenedor-login">
-        <div id="login">
-            <form id="login-form">
-                <labeL for="usuario">usuario</labeL>
-                <input id="usuario" type="text" name="usuario" placeholder="ingrese usuario" required>
-
-                <labeL for="contrasena">contraseña</labeL>
-                <input id="contrasena" type="text" name="contrasena" placeholder="ingrese contraseña" required>
-
-                <button type="submit" title="Ingresar" name="Ingresar" >Iniciar Sesión</button>
-
-                <a href="#">Olvidaste tu contraseña</a>
-
-            </form>
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" placeholder="Ingrese su usuario">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" class="login__input" placeholder="Ingrese su contraseña">
+                    </div>
+                    <button class="button login__submit">
+                        <span class="button__text">Iniciar Sesion</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>				
+                </form>
+                
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
         </div>
     </div>
 </body>
